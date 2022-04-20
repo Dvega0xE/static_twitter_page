@@ -1,0 +1,150 @@
+/* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+
+  /*for some dark theme*/
+  background-color: #141d26;
+}
+
+/* TODO: Create CSS for your Twitter Mockup */
+
+#general_wrapper {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  z-index: 100;
+}
+
+.nav-item {
+  border-color: transparent;
+  color: grey;
+  background-color: transparent;
+  border-radius: 0%;
+  font-weight: bold;
+}
+
+.nav-item:hover {
+  color: #4AB3F4;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid #4ab3f4;
+}
+
+.tweet_button {
+  background-color: #4ab3f4;
+  color: white;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#content_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 75px;
+  max-width: 1190px;
+  margin: 56px auto;
+}
+
+#profile {
+  width: 290px;
+  margin-top: -70px;
+}
+
+.profile_banner {
+  width: 290px;
+  height: 225px;
+  background-color: #233447;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+#profile_images {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  margin-top: 50px;
+  border: 2px solid white;
+}
+
+.details {
+  color: whitesmoke;
+  margin-left: 5px;
+}
+
+#profile_id {
+  margin-left: 70px;
+  margin-top: -40px;
+  z-index: 3;
+  top: 30px;
+}
+
+#profile_stats {
+  position: absolute;
+  margin-left: -7px;
+  margin-top: 70px;
+  color: white;
+  font-weight: bold;
+}
+
+#feed {
+  background-color: #233447;
+  width: 100%;
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.tweet {
+  color: white;
+  border-bottom: 1px solid grey;
+  min-height: 51px;
+  font-weight: bold;
+}
+
+#profile_images_2 {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+#follow {
+  background-color: #233447;
+  border-bottom: 1px solid grey;
+  color: white;
+  width: 290px;
+  height: 225px;
+  margin-top: 25px;
+}
+
+.follow_button {
+  background-color: white;
+  border-color: grey;
+  color: grey;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.skip {
+  display: none;
+}
+
+@media screen and (max-width: 1190px) {
+  #responsive_page {
+    display: none;
+  }
+}

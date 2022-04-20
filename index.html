@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Some of the code like the bootstrap links were provided by the TA during lab session-->
+
+<head>
+  <meta charset="utf-8" />
+  <title>My Twitter Feed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- your CSS can be added here -->
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<!--Nav Bar-->
+
+<body>
+  <a href="#feed">skip to twitter feed</a>
+  <div id="general_wrapper" role="navigation">
+    <div>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContents"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContents">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#Moments">Moments<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#Notifications">Notifications<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#Messages">Messages<span class="sr-only">(current)</span></a>
+          </div>
+        </div>
+
+        <!--Twitter Logo and Tweet Button-->
+        <div style="position: absolute; left: 50%;">
+          <img src="images/twitter-logo.png" alt="Twitter Logo" width="25px" height="25px">
+        </div>
+        <div>
+          <button class="nav-item nav-link btn tweet_button"><b>Tweet</b></button>
+        </div>
+      </nav>
+    </div>
+
+    <!--Body-->
+    <div id="content_wrapper">
+
+      <!--Profile-->
+      <div class="profile_banner px-0">
+        <div class="text-center" style="position: relative; z-index: 1; background-color: black;">
+          <br>
+          <img src="images/ratatouille-banner.png" width="130px" alt="Profile Banner">
+          <br><br>
+        </div>
+        <div class="px-3" style="z-index: 2;" id="profile">
+          <div>
+            <p style="display: inline;"><img id="profile_images" alt="Remy Profile Picture"
+                src="images/ratatouille.jpg">
+            </p>
+          </div>
+
+          <div id="profile_id">
+            <p class="details"><b><u>Remy</u></b></p>
+            <p class="details" style="margin-top: -15px">@remy</p>
+          </div>
+        </div>
+
+        <div id="profile_stats" class="px-3">
+          <br><br><br>
+          <div class="pl-2" style="float:left">Tweets<p style="color: #4ab3f4; margin-top: 10px;">5049</p>
+          </div>
+          <div class="pl-4" style="float:left">Following<p style="color: #4ab3f4; margin-top: 10px;">324</p>
+          </div>
+          <div class="pl-4" style="float:left">Followers<p style="color: #4ab3f4; margin-top: 10px;">809</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Twitter Feed-->
+      <div id="feed" role="main">
+        <div class="tweet">
+          <p style="display: inline"><img id="profile_images_2" alt="Remy Profile Picture"
+              src="images/ratatouille.jpg"><b>Remy</b>
+          </p>
+          <p style="display: inline; font-weight: normal;" class="details">@remy Nov 19</p>
+          <p style="margin-left: 80px;">I'm taking this class called CS 110 and the TA's are all so <span
+              style="font-weight: bolder;">cool!</span></p>
+        </div>
+        <div class="tweet">
+          <p style="display: inline"><img id="profile_images_2" alt="Remy Profile Picture"
+              src="images/ratatouille.jpg"><b>Remy</b>
+          </p>
+          <p style="display: inline; font-weight: normal;" class="details">@remy Nov 19</p>
+          <p style="margin-left: 80px;">It's 2007. You just got home from elementary school. Your mom has pizza bagels
+            in the oven. Ratatouille is in theaters. Life is good.</p>
+        </div>
+        <div class="tweet">
+          <p style="display: inline"><img id="profile_images_2" alt="Remy Profile Picture"
+              src="images/ratatouille.jpg"><b>Remy</b>
+          </p>
+          <p style="display: inline; font-weight: normal;" class="details">@remy Nov 19</p>
+          <p style="margin-left: 80px;">Lets make some pasta!</p>
+        </div>
+        <div class="tweet">
+          <p style="display: inline"><img id="profile_images_2" alt="Remy Profile Picture"
+              src="images/ratatouille.jpg"><b>Remy</b>
+          </p>
+          <p style="display: inline; font-weight: normal;" class="details">@remy Nov 19</p>
+          <p style="margin-left: 80px;">Lets make some pasta!</p>
+        </div>
+        <div class="tweet">
+          <p style="display: inline"><img id="profile_images_2" alt="Remy Profile Picture"
+              src="images/ratatouille.jpg"><b>Remy</b>
+          </p>
+          <p style="display: inline; font-weight: normal;" class="details">@remy Nov 19</p>
+          <p style="margin-left: 80px;">Lets make some pasta!</p>
+        </div>
+      </div>
+
+      <!--Who to Follow?-->
+      <div id="responsive_page">
+        <div id="follow">
+          <p style="font-size: 20px; color: white; margin-left: 10px"><b>Who to follow</b></p>
+          <p style="display: inline;"><img id="profile_images_2" alt="Linguini Profile Picture"
+              src="images/linguini.png"><b>Linguini</b>
+          </p>
+          <p style="display: inline" class="details">@linguini</p>
+          <div>
+            <button class="nav-item nav-link btn follow_button"
+              style="margin-left: 65px; margin-top: -10px;"><b>Follow</b></button>
+          </div>
+          <p style="display: inline;"><img id="profile_images_2" alt="Remy Profile Picture"
+              src="images/ratatouille.jpg"><b>CS 110 TA</b></p>
+          <p style="display: inline" class="details">@cs</p>
+          <div>
+            <button class="nav-item nav-link btn follow_button"
+              style="margin-left: 65px; margin-top: -10px;"><b>Follow</b></button>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    </div>
+  </div>
+</body>
+
+</html>
